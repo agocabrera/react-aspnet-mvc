@@ -1,0 +1,173 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #242424;
+    font-family: 'Courier New';
+    color: #ffffff;
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #363636;
+    margin: 0px auto;
+    width: min(600px, 80%);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+    margin-bottom: 30px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 200%;
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    color: hsl(0, 60%, 80%);
+}
+
+/* Heading */
+
+.products-heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Table */
+
+.products-table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    table-layout: auto;
+    overflow-wrap: break-word;
+}
+
+    .products-table th, .products-table td {
+        padding: 5px;
+        border: 1px solid lightsteelblue;
+    }
+
+    .products-table th {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: left;
+        background-color: slategray;
+    }
+
+    .products-table .id {
+        max-width: 2rem;
+    }
+
+    .products-table .name {
+        max-width: 10rem;
+    }
+
+    .products-table .description {
+        max-width: 20rem;
+    }
+
+    .products-table .controls {
+        background-color: inherit;
+        border: none;
+        padding: 0px;
+        height: 100%;
+    }
+
+/* Buttons */
+
+.edit, .delete, .new-product {
+    background-color: inherit;
+    cursor: pointer;
+    height: 28px;
+    width: 28px;
+    border: none;
+}
+
+.new-product {
+    fill: hsl(110, 60%, 80%);
+}
+
+.edit {
+    fill: hsl(222, 60%, 80%);
+    margin-left: 5px;
+}
+
+.delete {
+    fill: hsl(0, 60%, 80%);
+    margin-left: 5px;
+}
+
+/* Modal inputs and button */
+
+.modal-content form {
+    display: grid;
+    gap: 30px;
+}
+
+.modal-content button {
+    height: 2rem;
+    font-family: inherit;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(110, 60%, 80%);
+    cursor: pointer;
+}
+
+.input-group {
+    display: grid;
+    gap: 5px;
+}
+
+    .input-group label {
+        font-size: 1.2rem;
+    }
+
+    .input-group input, .input-group textarea {
+        font-size: 1rem;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        font-family: inherit;
+        font-weight: bold;
+    }
+
+    .input-group input {
+        height: 2rem;
+    }
+
+    .input-group textarea {
+        height: 300px;
+        resize: none;
+    }

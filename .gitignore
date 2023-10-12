@@ -1,0 +1,8 @@
+# Visual Studio directory
+.vs/
+
+# SQLite files
+sqlite-db.*
+
+# What is this?
+reactapp/obj/
